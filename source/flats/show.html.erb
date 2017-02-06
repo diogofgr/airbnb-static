@@ -1,0 +1,20 @@
+<div class="show-flat padded">
+  <!-- source/flats/show.html.erb -->
+  <% flat = data.flats[owner] %>
+
+  <!-- Inject flat data in template -->
+  <h2><%= flat.summary %><h2>
+  <div class="row">
+    <div class="col-xs-6">
+      <%= image_tag flat.room_picture, class: "show-flat-picture"%>
+    </div>
+    <div class="col-xs-6">
+      <div class="container show-flat-info">
+        <p><%= "Owner: " + flat.owner_name %></p>
+        <p><%= "Location: " + flat.city.to_s %></p>
+        <p><%= "Wifi: " + (flat.wifi ? "yes" : "no") %></p>
+        <%= image_tag flat.owner_picture, class: "avatar-larger" %>
+      </div>
+    </div>
+  </div>
+</div>

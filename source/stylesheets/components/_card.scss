@@ -1,3 +1,7 @@
+.cards{
+  background: $gray-lighter;
+}
+
 .card {
   height: 200px;
   text-shadow: 0 1px 3px rgba(0,0,0,0.6);
@@ -22,12 +26,12 @@
   position: absolute;
   bottom: 10px;
   left: 10px;
-}
-.card-description h2 {
-  font-size: 22px;
-}
-.card-description p {
-  font-size: 15px;
+  h2 {
+    font-size: 22px;
+  }
+  p {
+    font-size: 15px;
+  }
 }
 .card-link {
   position: absolute;
@@ -37,7 +41,7 @@
   z-index:2;
   background: black;
   opacity: 0;
-}
-.card-link:hover{
-  opacity: 0.1;
+  &:hover{
+    opacity: 0.1;
+  }
 }
