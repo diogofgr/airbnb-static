@@ -1,0 +1,13 @@
+<html>
+  <body>
+    <h1 class="text-center">The Team</h1>
+    <ul class="list-inline text-center">
+      <% ["Diogo", "André", "Franz"].each_with_index do |member, i|%>
+        <li>
+          <%= image_tag "http://bunnyholder.com/#{(i+3)*100}/#{(i+3)*100}", class: "img-circle", width: 200%>
+          <h3><%= member.capitalize %></h3>
+        </li>
+      <% end %>
+    </ul>
+  </body>
+</html>
